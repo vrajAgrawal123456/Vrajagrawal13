@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🍌 Banana Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="calc-wrap">
+    <div class="calc-header">
+      <div class="banana-icon">🍌</div>
+      <div class="calc-title">
+        Banana Calc
+        <span>by Hao Project</span>
+      </div>
+    </div>
+
+    <div class="display-area">
+      <div class="display-expr" id="expr"></div>
+      <div class="display-main" id="display">0</div>
+    </div>
+
+    <div class="buttons-grid">
+      <button class="btn btn-clear" onclick="clearAll()">AC</button>
+      <button class="btn btn-back" onclick="backspace()">⌫</button>
+      <button class="btn btn-op" onclick="inputOp('%')">%</button>
+      <button class="btn btn-op" onclick="inputOp('/')">÷</button>
+
+      <button class="btn btn-num" onclick="inputNum('7')">7</button>
+      <button class="btn btn-num" onclick="inputNum('8')">8</button>
+      <button class="btn btn-num" onclick="inputNum('9')">9</button>
+      <button class="btn btn-op" onclick="inputOp('*')">×</button>
+
+      <button class="btn btn-num" onclick="inputNum('4')">4</button>
+      <button class="btn btn-num" onclick="inputNum('5')">5</button>
+      <button class="btn btn-num" onclick="inputNum('6')">6</button>
+      <button class="btn btn-op" onclick="inputOp('-')">−</button>
+
+      <button class="btn btn-num" onclick="inputNum('1')">1</button>
+      <button class="btn btn-num" onclick="inputNum('2')">2</button>
+      <button class="btn btn-num" onclick="inputNum('3')">3</button>
+      <button class="btn btn-op" onclick="inputOp('+')">+</button>
+
+      <button class="btn btn-num span2" onclick="inputNum('0')">0</button>
+      <button class="btn btn-num" onclick="inputDot()">.</button>
+      <button class="btn btn-eq" onclick="calculate()">=</button>
+    </div>
+
+    <div class="footer">🍌 Go bananas with math!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

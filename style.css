@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF3C0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.calc-wrap {
+  width: 360px;
+  background: #FFF8E7;
+  border-radius: 28px;
+  border: 2px solid #F5C842;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(245, 200, 66, 0.25);
+}
+
+/* Header */
+.calc-header {
+  background: linear-gradient(135deg, #F5C842 0%, #FFE566 100%);
+  padding: 1.2rem 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.banana-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.calc-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.5rem;
+  color: #7A4D00;
+}
+
+.calc-title span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #A06B00;
+  display: block;
+  margin-top: -3px;
+}
+
+/* Display */
+.display-area {
+  background: #FFF3C0;
+  border-bottom: 2px solid #F5C842;
+  padding: 1rem 1.5rem 0.8rem;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.display-expr {
+  font-size: 0.9rem;
+  color: #B08A00;
+  min-height: 1.2rem;
+  word-break: break-all;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.display-main {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2.4rem;
+  color: #5A3A00;
+  line-height: 1;
+  word-break: break-all;
+  text-align: right;
+}
+
+/* Buttons Grid */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 1rem 1.2rem 1.4rem;
+}
+
+.btn {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  padding: 0.85rem 0.5rem;
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s;
+  outline: none;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.93);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+/* Number Buttons */
+.btn-num {
+  background: #FFFDE0;
+  color: #5A3A00;
+  border: 1.5px solid #F5C842;
+  box-shadow: 0 3px 0 #D4A800;
+}
+
+.btn-num:hover {
+  background: #FFF9C0;
+}
+
+/* Operator Buttons */
+.btn-op {
+  background: #F5C842;
+  color: #7A4D00;
+  border: 1.5px solid #D4A800;
+  box-shadow: 0 3px 0 #B08A00;
+  font-size: 1.2rem;
+}
+
+.btn-op:hover {
+  background: #FFD740;
+}
+
+/* Equals Button */
+.btn-eq {
+  background: #FF9900;
+  color: #fff;
+  border: 1.5px solid #CC7A00;
+  box-shadow: 0 3px 0 #994900;
+  font-size: 1.3rem;
+}
+
+.btn-eq:hover {
+  background: #FFB300;
+}
+
+/* Clear Button */
+.btn-clear {
+  background: #FF6B35;
+  color: #fff;
+  border: 1.5px solid #CC4400;
+  box-shadow: 0 3px 0 #992200;
+  font-size: 0.95rem;
+}
+
+.btn-clear:hover {
+  background: #FF8C5A;
+}
+
+/* Backspace Button */
+.btn-back {
+  background: #FFE0A0;
+  color: #7A4D00;
+  border: 1.5px solid #D4A800;
+  box-shadow: 0 3px 0 #B08A00;
+  font-size: 1rem;
+}
+
+.btn-back:hover {
+  background: #FFD070;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #C09040;
+  padding: 0 0 0.9rem;
+  letter-spacing: 0.3px;
+}
